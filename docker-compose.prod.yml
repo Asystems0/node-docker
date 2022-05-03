@@ -9,6 +9,8 @@ services:
       context: .
       args:
         - NODE_ENV=production
+    ports:
+      - "5000:5000"
     environment:
       - NODE_ENV=production
       - MONGO_USER=${MONGO_USER}
