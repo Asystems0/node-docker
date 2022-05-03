@@ -65,8 +65,8 @@ app.use(
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("<h2>Hello World!!!</h2>");
+app.get("/api/", (req, res) => {
+  res.send("<h2>Hello to EC2</h2>");
 });
 
 app.get("/api/v1", (req, res) => {
